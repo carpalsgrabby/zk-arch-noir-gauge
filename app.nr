@@ -38,6 +38,9 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
         best_idx = 2u8;
         best_score = snd_score;
     }
+    // Start with Aztec as default winner.
+    let mut best_idx: u8 = STYLE_AZTEC;
+    let mut best_score: u16 = aztec_score;
 
     best_idx
 }
