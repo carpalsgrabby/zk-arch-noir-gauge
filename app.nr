@@ -18,6 +18,7 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
     let f: u8 = if fhe > 100u8 { 100u8 } else { fhe };
     let s: u8 = if soundness > 100u8 { 100u8 } else { soundness };
 
+    // Use u16 for scores to avoid overflow when multiplying and adding.
     let p16: u16 = p as u16;
     let f16: u16 = f as u16;
     let s16: u16 = s as u16;
