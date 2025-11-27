@@ -41,3 +41,5 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
 
     best_idx
 }
+// Example (conceptual):
+//   main(privacy=90u8, fhe=40u8, soundness=80u8) ≈ 0u8 (Aztec-style)
