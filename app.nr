@@ -11,7 +11,7 @@
 //   soundness : how important formal soundness is (0–100)
 //
 // Output (public):
-//   style_idx : 0 / 1 / 2 as described above
+//   style_idx : 0 / 1 / 2 as described above (declared as pub u8)
 
 fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
     let p: u8 = if privacy > 100u8 { 100u8 } else { privacy };
