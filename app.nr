@@ -26,7 +26,7 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
     let zama_score: u16 = p16 * 2u16 + f16 * 3u16;
     let snd_score: u16 = s16 * 4u16 + p16;
 
-    let mut best_idx: u8 = 0u8;
+       let mut best_idx: u8 = STYLE_AZTEC;
     let mut best_score: u16 = aztec_score;
 
     if zama_score > best_score {
