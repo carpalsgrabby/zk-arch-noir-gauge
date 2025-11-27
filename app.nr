@@ -26,6 +26,9 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
     let zama_score: u16 = p16 * 2u16 + f16 * 3u16;
     let snd_score: u16 = s16 * 4u16 + p16;
 
+   // Tie-breaking:
+    // - Aztec wins ties vs Zama and Soundness
+    // - Zama wins ties vs Soundness
     let mut best_idx: u8 = 0u8;
     let mut best_score: u16 = aztec_score;
 
