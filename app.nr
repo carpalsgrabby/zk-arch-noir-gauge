@@ -6,9 +6,9 @@
 //   2u8 => Soundness-first protocol
 //
 // Inputs (public):
-//   privacy   : how important privacy is       (0–100)
-//   fhe       : how important FHE support is   (0–100)
-//   soundness : how important formal soundness is (0–100)
+//   privacy   : how important privacy is            (0–100)
+//   fhe       : how important FHE support is        (0–100)
+//   soundness : how important formal soundness is   (0–100)
 //
 // Output (public):
 //   style_idx : 0 / 1 / 2 as described above
