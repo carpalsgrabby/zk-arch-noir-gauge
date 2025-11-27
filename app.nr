@@ -14,6 +14,11 @@
 //   style_idx : 0 / 1 / 2 as described above
 
 fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
+    // Inputs are expected to be in [0, MAX_PREF] before clamping.
+    assert(privacy <= 255u8);
+    assert(fhe <= 255u8);
+    assert(soundness <= 255u8);
+
     let p: u8 = if privacy > 100u8 { 100u8 } else { privacy };
     let f: u8 = if fhe > 100u8 { 100u8 } else { fhe };
     let s: u8 = if soundness > 100u8 { 100u8 } else { soundness };
