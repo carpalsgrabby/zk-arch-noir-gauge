@@ -21,9 +21,13 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
     let p16: u16 = p as u16;
     let f16: u16 = f as u16;
     let s16: u16 = s as u16;
+// Aztec-style: 3×privacy + 2×soundness
 
     let aztec_score: u16 = p16 * 3u16 + s16 * 2u16;
+
+    // Zama-style: 2×privacy + 3×FHE
     let zama_score: u16 = p16 * 2u16 + f16 * 3u16;
+ // Soundness-first: 4×soundness + 1×privacy
     let snd_score: u16 = s16 * 4u16 + p16;
 
     let mut best_idx: u8 = 0u8;
