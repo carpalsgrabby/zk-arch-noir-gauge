@@ -41,3 +41,4 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
 
     best_idx
 }
+
