@@ -12,6 +12,9 @@
 //
 // Output (public):
 //   style_idx : 0 / 1 / 2 as described above
+const STYLE_AZTEC: u8 = 0u8;
+const STYLE_ZAMA: u8 = 1u8;
+const STYLE_SOUND: u8 = 2u8;
 
 fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
     let p: u8 = if privacy > 100u8 { 100u8 } else { privacy };
