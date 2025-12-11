@@ -1,4 +1,4 @@
-// app.nr
+// app.nr — Noir circuit that picks a Web3 architecture style (Aztec / Zama / soundness-first).
 // Chooses between three styles based on 0–100 preference sliders:
 //
 //   0u8 => Aztec-style zk privacy rollup
