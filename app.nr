@@ -14,9 +14,9 @@
 //   style_idx : 0 / 1 / 2 as described above
 
 fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
-    let p: u8 = if privacy > 100u8 { 100u8 } else { privacy };
-    let f: u8 = if fhe > 100u8 { 100u8 } else { fhe };
-    let s: u8 = if soundness > 100u8 { 100u8 } else { soundness };
+      let p: u8 = if privacy > MAX_PREF { MAX_PREF } else { privacy };
+    let f: u8 = if fhe > MAX_PREF { MAX_PREF } else { fhe };
+    let s: u8 = if soundness > MAX_PREF { MAX_PREF } else { soundness };
 
     let p16: u16 = p as u16;
     let f16: u16 = f as u16;
