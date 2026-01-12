@@ -33,6 +33,7 @@ fn main(privacy: u8, fhe: u8, soundness: u8) -> pub u8 {
         best_idx = 1u8;
         best_score = zama_score;
     }
+    // Note: weights below are illustrative and can be tuned for your project.
 
     if snd_score > best_score {
         best_idx = 2u8;
